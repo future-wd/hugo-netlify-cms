@@ -1,0 +1,24 @@
+{{ if .Site.Params.netlifyIdentity.enabled }}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+{{ if .Site.Params.netlifyIdentity.bootstrap -}}
+<style>
+  /* bs5 $zindex-modal-backdrop */
+  #netlify-identity-widget {
+    z-index: 1040 !important;
+  }
+</style>
+{{- end -}}
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/{{- .Site.Params.netlifyIdentity.dir | default "admin" -}}/";
+        });
+      }
+    });
+  }
+</script>
+{{ end }}
+
+{{ end }}

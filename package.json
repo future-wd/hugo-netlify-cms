@@ -1,0 +1,20 @@
+{
+  "name": "@future-wd/hugo-netlify-cms",
+  "version": "0.1.0",
+  "description": "Netlify CMS HUGO Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/future-wd/hugo-netlify-cms"
+  },
+  "keywords": [
+    "netlify",
+    "hugo",
+    "netlify-cms"
+  ],
+  "author": "Sean Emerson",
+  "license": "CC0-1.0"
+}
