@@ -1,0 +1,1 @@
+- [ ] customisable location of /admin/ through config. Can the file be copied????
